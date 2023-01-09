@@ -8,11 +8,11 @@ declare var $: any;
 export class HomeCategoriesComponent implements OnInit {
 
   slider= [
-    {img: '/assets/img/categories/cat-1.jpg' , title: 'fresh fruit'},
-    {img: '/assets/img/categories/cat-2.jpg', title: 'dried fruit'},
-    {img: '/assets/img/categories/cat-3.jpg', title: 'vegetables'},
-    {img: '/assets/img/categories/cat-4.jpg', title: 'drink fruits'},
-    {img: '/assets/img/categories/cat-5.jpg', title: 'meat'},
+    {img: 'assets/img/categories/cat-1.jpg' , title: 'fresh fruit'},
+    {img: 'assets/img/categories/cat-2.jpg', title: 'dried fruit'},
+    {img: 'assets/img/categories/cat-3.jpg', title: 'vegetables'},
+    {img: 'assets/img/categories/cat-4.jpg', title: 'drink fruits'},
+    {img: 'assets/img/categories/cat-5.jpg', title: 'meat'},
   ]
 
   constructor() { }
