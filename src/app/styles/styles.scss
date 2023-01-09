@@ -1,0 +1,50 @@
+
+/*for main section*/
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    
+    }
+}
+
+@media only screen and (max-width: 992px) {
+  
+    .container-fluied {
+        max-width: 100%;
+    }
+    .content-main-page{
+        margin-top: 30px;
+    }
+    .top-header {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .main-menu-search-phone {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/*for featured products*/
+
+@media only screen and (max-width: 992px) {
+    .featured-products-content {
+        width: 33.3333333% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .featured-products-content {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .featured-products-content {
+        width: 100% !important;
+    }
+}

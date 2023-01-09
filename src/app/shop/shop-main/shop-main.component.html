@@ -1,0 +1,62 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 left-slider">
+            <app-left-slider [mainList]="list">
+                <span>All Departments</span>
+            </app-left-slider>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <app-search-categories></app-search-categories>
+        </div>
+    </div>
+</div>
+
+
+<app-section-header>
+    <h2>Organi Shop</h2>
+    <a routerLink="/">Home</a>
+    <span>Shop</span>
+</app-section-header>
+
+
+<section class="shop-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <h4>Department</h4>
+                        <ul>
+                            <li *ngFor="let item of list">
+                                <a href="#">{{item.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  <!--./side-bar-->
+
+                <app-price></app-price>
+                <app-colors></app-colors>
+                <app-popular-size></app-popular-size>
+                <app-latest-products></app-latest-products>
+            </div> <!--./left side section-->
+
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <div class="product-discount">
+                    <div class="product-discount-title mb-5">
+                        <app-main-title>sale off</app-main-title>
+                    </div>
+
+                    <div class="product-discount-slider mt-4">
+                        <app-discount-slider></app-discount-slider>
+                    </div>
+
+                    <app-filter-products></app-filter-products>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+
+

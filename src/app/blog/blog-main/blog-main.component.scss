@@ -1,0 +1,42 @@
+
+a {
+    position: relative;
+    color: #FFF;
+    margin-right: 20px;
+    font-weight: 700;
+    &::after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 17px;
+        width: 8px;
+        height: 1px;
+        background-color: #FFF;
+
+    }
+
+}
+
+h2 {
+    font-size: 46px;
+}
+
+.blog-item {
+    margin-top: 30px;
+    ul {
+        display: flex;
+        gap: 1rem;
+    }
+   
+}
+
+
+.blog {
+    border-bottom: none;
+}
+
+
+.blog-items {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 70px;
+}

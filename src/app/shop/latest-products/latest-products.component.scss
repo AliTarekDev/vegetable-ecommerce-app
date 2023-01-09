@@ -1,0 +1,28 @@
+
+.latest-products {
+    position: relative;
+}
+.latest-products-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    &-link {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &-text {
+        padding-top: 10px;
+        h6 {
+            font-size: 16px;
+            color: var(--secondary-color);
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+        span {
+            font-size: 18px;
+            display: block;
+            color: #252525;
+            font-weight: 700;
+        }
+    }
+}

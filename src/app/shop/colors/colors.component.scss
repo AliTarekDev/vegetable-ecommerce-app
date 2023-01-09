@@ -1,0 +1,43 @@
+
+
+.colors {
+    margin-bottom: 35px;
+    h4 {
+        margin-bottom: 15px;
+    }
+    &-item {
+        span {
+            margin-top: 12px;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+}
+
+.white span {
+    background-color: transparent;
+    border: 2px solid #333;
+}
+
+.gray span {
+    background-color: #E9A625;
+}
+
+.red span {
+    background-color: #D62D2D;
+}
+
+.black span {
+    background-color: #252525;
+}
+
+.blue span {
+    background-color: #249BC8;
+}
+
+.green span {
+    background-color: #3CC032;
+}

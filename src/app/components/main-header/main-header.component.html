@@ -1,0 +1,67 @@
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" draggable="false" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon">
+      <i class="fa fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+            true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./shop"  routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+            true}">Shop</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+            true}">pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="./pages/shop-details" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+              true}">Shop Details</a></li>
+            <li><a class="dropdown-item" routerLink="./pages/shopping-cart" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+              true}">shopping cart</a></li>
+            <li><a class="dropdown-item" routerLink="./pages/check-out" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+              true}">check out</a></li>
+            <li><a class="dropdown-item" routerLink="./pages/blog-details" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+              true}">Bolg details</a></li>
+          </ul>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./blog" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+            true}">blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./contact" routerLinkActive="active-cls" [routerLinkActiveOptions]="{exact:
+            true}">contact</a>
+        </li>
+      </ul>
+
+      <div class="hero-wishlist">
+        <div class="hero-wishlist-wrapper">
+          <a href="#"  class="hero-wishlist-wrapper-icon">
+            <i class="fa fa-heart"></i>
+            <span>1</span>
+          </a>
+
+          <a href="#" class="hero-wishlist-wrapper-icon">
+            <i class="fa fa-shopping-bag"></i>
+            <span>2</span>
+          </a>
+        </div>
+        <div>
+          <span>item: <strong>$150.00</strong></span>
+        </div>
+      </div>
+    </div>
+</nav>
+</div>

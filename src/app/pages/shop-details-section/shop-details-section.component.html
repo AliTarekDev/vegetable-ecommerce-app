@@ -1,0 +1,261 @@
+
+
+<section class="product-details top-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="product-details-pic-item">
+                    <img src="assets/img/product/details/product-details-1.jpg" 
+                    draggable="false"
+                    class="w-100"
+                     alt="product-details">
+                </div>
+                <div class="product-details-pic-slider mt-3">
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-template *ngFor="let item of productDetails" carouselSlide>
+                            <img [src]="item.image" alt="sliderImage" (click)="selectImage(item.image)">
+                        </ng-template>  
+                    </owl-carousel-o>
+                </div>
+            
+            </div>  <!--./col-->
+            <div class="col-lg-6 col-md-6">
+                <div class="product-details-text">
+                    <h3>{{"vegetable's packege"| titlecase}}</h3>
+                    <div class="product-details-text-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(18 reviews)</span>
+                    </div>
+                </div>
+
+                <div class="product-details-price">
+                    {{50 | currency}}
+                </div>
+
+                <p>
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. 
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.
+                </p>
+
+                <div class="product-details-quan">
+                    <div class="product-details-quantity">
+                        <button type="button" (click)="decrementVal()"><i class="fa-solid fa-minus"></i></button>
+                        <input type="text" [value]="quantity" disabled>
+                        <button type="button" (click)="incrementVal()"><i class="fa-solid fa-plus"></i></button>
+    
+                    </div>
+    
+                    <a href="#" class="primary-btn">add to cart</a>
+                    <a href="#" class="heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                </div>
+
+                
+                <ul class="details-list">
+                    <li>
+                        <b>Availability</b>
+                        <span>In Stock</span>
+                    </li>
+                    <li>
+                        <b>Shipping</b>
+                        <span>01 day shipping.<samp>Free pickup today</samp></span>
+                    </li>
+                    <li>
+                        <b>Weight</b>
+                        <span>0.5 kg</span>
+                    </li>
+                    <li>
+                        <b>Share On</b>
+                        <div class="share">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-12"> <!--Start Tabs-->
+                <div class="product-details-tabs top-space">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Information</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reviews (12)</button>
+                        </li>
+                      
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                       
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="nav-tabs-content">
+                                <h6>{{'products information' | titlecase}}</h6>
+                                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. 
+                                    Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac 
+                                    diam sit amet quam vehicula elementum sed sit amet dui.
+                                     Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor 
+                                     eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+                                </p>
+    
+                                <p>Praesent sapien massa, convallis a pellentesque nec, 
+                                    egestas non nisi. Lorem ipsum dolor sit amet, consectetur 
+                                    adipiscing elit. Mauris blandit aliquet elit, eget tincidunt
+                                    nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.
+                                    Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh.
+                                     Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.
+                                </p>
+                            </div>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="nav-tabs-content">
+                                <h6>{{'products information' | titlecase}}</h6>
+                                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+                                </p>
+                                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                </p>
+                            </div> 
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="nav-tabs-content">
+                                <h6>{{'products information' | titlecase}}</h6>
+
+                                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="col-12 top-space"> <!--start related-products-->
+                <app-main-title>
+                    Related product
+                </app-main-title>
+
+                <div class="featured-products mt-5">
+                    <div class="featured-products-content">
+                        <div class="featured-img">
+                            <img src="assets/img/product/product-1.jpg" class="w-100" alt="product">
+                            <ul class="featured-img-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-retweet"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  <!--./feature-img-->
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <span>$30.00</span>
+                    </div>
+
+                    <div class="featured-products-content">
+                        <div class="featured-img">
+                            <img src="assets/img/product/product-2.jpg" class="w-100" alt="product">
+                            <ul class="featured-img-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-retweet"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  <!--./feature-img-->
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <span>$30.00</span>
+                    </div>
+
+                    <div class="featured-products-content">
+                        <div class="featured-img">
+                            <img src="assets/img/product/product-3.jpg" class="w-100" alt="product">
+                            <ul class="featured-img-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-retweet"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  <!--./feature-img-->
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <span>$30.00</span>
+                    </div>
+
+                    <div class="featured-products-content">
+                        <div class="featured-img">
+                            <img src="assets/img/product/product-5.jpg" class="w-100" alt="product">
+                            <ul class="featured-img-icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-retweet"></i>
+                                    </a>
+                                </li>
+                
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  <!--./feature-img-->
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <span>$30.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

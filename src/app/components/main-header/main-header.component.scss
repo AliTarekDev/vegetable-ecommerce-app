@@ -1,0 +1,101 @@
+.active-cls {
+    color: var(--main-color) !important;
+}
+.navbar {
+    padding: 1rem 0;
+}
+.bg-dark {
+    background-color: transparent !important;
+}
+
+
+.navbar-brand {
+    width: 30%;
+}
+
+
+.navbar-nav {
+    .nav-item {
+        margin: 0 15px;
+        .nav-link {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            &:hover {
+                color: var(--main-color) !important;
+            }
+ 
+        }
+    }
+}
+
+.navbar-expand-lg .navbar-collapse {
+    width: 70%;
+    align-items: center;
+}
+
+.dropdown-menu {
+    background-color: rgb(8, 8, 8) !important;
+    .dropdown-item {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 14px;
+        padding: 5px 15px;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: var(--main-color);
+        }
+    }
+}
+
+
+/*hero-wishlist*/
+
+.hero-wishlist {
+    display: flex;
+    gap: 3rem;
+    &-wrapper {
+        display: flex;
+        gap: 1rem;
+
+        &-icon {
+            position: relative;
+            color: #000;
+            margin: 0 5px;
+            i {
+                font-size: 18px;
+            }
+          span {
+            position: absolute;
+            top: 0px;
+            right: -11px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--main-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #fff;
+          }
+        }
+        
+    }
+}
+
+
+.navbar-toggler {
+    position: relative;
+    right: 55px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+.navbar-toggler-icon {
+    line-height: 1.5em;
+}
+
+

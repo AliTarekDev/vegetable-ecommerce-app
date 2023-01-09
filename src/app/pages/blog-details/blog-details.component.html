@@ -1,0 +1,168 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 left-slider">
+            <app-todo-list [mainList]="list">
+                <span>All Departments</span>
+            </app-todo-list>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <app-search-categories></app-search-categories>
+        </div>
+    </div>
+</div>
+
+<app-section-header>
+    <h2>{{'The Moment You Need To Remove Garlic From The Menu' | titlecase}}</h2>
+    <ul>
+        <li>By Ali Tarek</li>
+        <li> January 14, 2019</li>
+        <li> 8 Comments</li>
+    </ul>
+</app-section-header>
+
+
+<section class="blog top-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 order-md-1 order-2">
+                <app-blog-sidebar></app-blog-sidebar>
+            </div> <!--./col-lg-4-->
+            <div class="col-lg-8 col-md-7 order-md-1 order-1">
+                <div class="blog-details-text">
+                    <img src="assets/img/blog/details/details-pic.jpg" draggable="false"  alt="">
+                    <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                        dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit
+                        aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur
+                        sed, convallis at tellus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada.
+                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus.
+                        Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis
+                        quis ac lectus. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada
+                        feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+
+                        <h3>The corner window forms a place within a place that is a resting point within the large
+                            space.</h3>
+
+                            <p>
+                                The study area is located at the back with a view of the vast nature. Together with the other
+                            buildings, a congruent story has been managed in which the whole has a reinforcing effect on
+                            the components. The use of materials seeks connection to the main house, the adjacent
+                            stables
+                            </p>
+                </div> <!--./blog-details-text-->
+                <div class="blog-details-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="blog-details-author">
+                                <div class="blog-details-author-pic">
+                                    <img src="assets/img/blog/details/details-author.jpg" alt="author">
+                                </div>
+                                <div class="blog-details-author-text">
+                                    <h6>Michael Scofield</h6>
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="blog-details-widget">
+                                <ul>
+                                    <li>
+                                        <span>categories:</span>
+                                        food
+                                    </li>
+
+                                    <li>
+                                        <span>tags:</span>
+                                        All, Trending, Cooking, Healthy Food, Life Style
+                                    </li>
+                                </ul>
+
+                                <div class="blog-details-social">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--./blog-details-content-->
+            </div>
+        </div>
+    </div>
+</section><!--./blog-->
+
+
+
+<section class="related-blog top-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-main-title>
+                    post you may like
+                </app-main-title>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-item">
+                    <div class="blog-item-pic">
+                        <img src="assets/img/blog/blog-1.jpg" alt="">
+                    </div>
+
+                    <div class="blog-item-text">
+                        <ul>
+                            <li><i class="fa-regular fa-calendar"></i> May 4,2019</li>
+                            <li><i class="fa-regular fa-comment"></i> 5</li>
+                        </ul>
+
+                        <h5><a href="#">Cooking tips make cooking simple</a></h5>
+
+                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    </div>
+                </div> <!--./blog-item-->
+
+                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-item">
+                    <div class="blog-item-pic">
+                        <img src="assets/img/blog/blog-2.jpg" alt="">
+                    </div>
+
+                    <div class="blog-item-text">
+                        <ul>
+                            <li><i class="fa-regular fa-calendar"></i> May 4,2019</li>
+                            <li><i class="fa-regular fa-comment"></i> 5</li>
+                        </ul>
+
+                        <h5><a href="#">Cooking tips make cooking simple</a></h5>
+
+                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    </div>
+                </div> <!--./blog-item-->
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog-item">
+                    <div class="blog-item-pic">
+                        <img src="assets/img/blog/blog-3.jpg" alt="">
+                    </div>
+
+                    <div class="blog-item-text">
+                        <ul>
+                            <li><i class="fa-regular fa-calendar"></i> May 4,2019</li>
+                            <li><i class="fa-regular fa-comment"></i> 5</li>
+                        </ul>
+
+                        <h5><a href="#">Cooking tips make cooking simple</a></h5>
+
+                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    </div>
+                </div> <!--./blog-item-->
+            </div>
+        </div>
+    </div>
+</section>
+
+

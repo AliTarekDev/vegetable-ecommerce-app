@@ -1,0 +1,39 @@
+
+
+<section class="blog-section top-space w-100">
+    <app-main-title>
+        from the blog
+    </app-main-title>
+
+    <div class="blog-section-content mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let blog of blog">
+                    <div class="blog-section-content-item">
+                        <div class="blog-section-content-item-image">
+                            <img [src]="blog.image" [alt]="blog.title" class="w-100">
+                        </div>
+                        <div class="blog-section-content-text">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    May 4,2019
+                                </li>
+
+                                <li>
+                                    <i class="fa-regular fa-comment"></i>
+                                    5
+                                </li>
+                            </ul>
+
+                            <h5><a href="#">{{blog.title}}</a></h5>
+                            <p>{{blog.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,10 @@
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide *ngFor="let item of imgSlider">
+    <div class="img-slider">
+      <img [src]="item.img" [alt]="item.title">
+      <h5 class="img-slider-title"><a href="">{{item.title}}</a></h5>
+    </div>
+
+  </ng-template> 
+ 
+</owl-carousel-o>

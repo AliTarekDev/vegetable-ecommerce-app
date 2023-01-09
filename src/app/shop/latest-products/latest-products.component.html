@@ -1,0 +1,51 @@
+
+
+<section class="latest-products">
+    <h4>Latest Products</h4>
+
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let item of products">
+            <div class="latest-products-item" >
+
+                <a href="#" class="latest-products-item-link">
+                    <div class="latest-products-item-pic">
+                        <img src="assets/img/latest-product/lp-1.jpg" alt="" draggable="false">
+                    </div> 
+                    
+                    <div class="latest-products-item-text">
+                        <h6>crab bool security</h6>
+                        <span>$30.00</span>
+                    </div>
+                </a>
+              
+                
+            </div> <!--./first-coloumn-->
+
+            <div class="latest-products-item" >
+                <a href="#" class="latest-products-item-link">
+                    <div class="latest-products-item-pic">
+                        <img src="assets/img/latest-product/lp-2.jpg" alt="" draggable="false">
+                    </div> 
+                    
+                    <div class="latest-products-item-text">
+                        <h6>crab bool security</h6>
+                        <span>$30.00</span>
+                    </div>
+                </a>
+            </div> <!--./first-coloumn-->
+
+            <div class="latest-products-item" >
+                <a href="#" class="latest-products-item-link">
+                    <div class="latest-products-item-pic">
+                        <img src="assets/img/latest-product/lp-3.jpg" alt="" draggable="false">
+                    </div> 
+                    
+                    <div class="latest-products-item-text">
+                        <h6>crab bool security</h6>
+                        <span>$30.00</span>
+                    </div>
+                </a>
+            </div> <!--./first-coloumn-->
+        </ng-template>     
+      </owl-carousel-o>
+</section>

@@ -1,0 +1,22 @@
+
+a {
+    position: relative;
+    color: #FFF;
+    margin-right: 20px;
+    font-weight: 700;
+    &::after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 17px;
+        width: 8px;
+        height: 1px;
+        background-color: #FFF;
+
+    }
+
+}
+
+h2 {
+    font-size: 46px;
+}

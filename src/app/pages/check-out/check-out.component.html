@@ -1,0 +1,187 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 left-slider">
+            <app-todo-list [mainList]="list">
+                <span>All Departments</span>
+            </app-todo-list>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <app-search-categories></app-search-categories>
+        </div>
+    </div>
+</div>
+
+<app-section-header>
+    <h2>{{'checkout' | titlecase}}</h2>
+    <a routerLink="/">Home </a>
+    <span>{{'checkout' | titlecase}}</span>
+</app-section-header>
+
+
+
+<section class="checkout">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h6>
+                    <span>
+                        <i class="fa-solid fa-tag"></i>
+                    </span>
+                    Have a coupon?
+                    <a href="">click here</a> to enter your code
+                </h6>
+            </div>
+        </div> <!--./row-->
+
+        <div class="checkout-form">
+            <h4>{{'billing details' | titlecase}}</h4>
+            <form>
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout-input">
+                                    <p>First Name <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout-input">
+                                    <p>Last Name <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div> <!--./row-->
+
+                            <div class="checkout-input">
+                                <p>Country <span>*</span></p>
+                                <input type="text">
+                            </div>
+
+                        
+                            <div class="checkout-input">
+                                <p>Address <span>*</span></p>
+                                <input type="text" placeholder="Street Address" class="checkout-input-add">
+                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                            </div>
+
+                        
+
+                            <div class="checkout-input">
+                                <p>Town/City <span>*</span></p>
+                                <input type="text">
+                            </div>
+
+                            <div class="checkout-input">
+                                <p>Country/state <span>*</span></p>
+                                <input type="text">
+                            </div>
+
+                        
+                            <div class="checkout-input">
+                                <p>Postcode / ZIP <span>*</span></p>
+                                <input type="text">
+                            </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                    <div class="checkout-input">
+                                        <p>Phone <span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                            </div>
+                            <div class="col-lg-6">
+                                    <div class="checkout-input">
+                                        <p>Email <span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                            </div>
+
+
+                        </div> <!--row-->
+
+                            <div class="checkout-input">
+                                <label>
+                                    <input type="checkbox" class="checkout-check">
+                                    Create an account?
+                                </label>
+                            </div>
+
+                            <p class="checkout-text">Create an account by entering the information below. If you are a returning customer please login at the top of the page
+                            </p>
+
+                            <div class="checkout-input">
+                                <p>Account Password <span>*</span></p>
+                                <input type="text">
+                            </div>
+
+                            <div class="checkout-input">
+                                <label>
+                                    <input type="checkbox" class="checkout-check">
+                                    Ship to a different address?
+                                </label>
+                            </div>
+
+                            
+                            <div class="checkout-input">
+                                <p>Order notes <span>*</span></p>
+                                <input type="text" placeholder="Notes about your order, e.g. special notes for delivery.">
+                            </div>
+
+                    </div> <!--./checkout-form-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="checkout-order">
+                            <h4>Your Order</h4>
+
+                            <div class="checkout-order-products">
+                                Products <span>Total</span>
+                            </div>
+
+                            <ul>
+                                <li>Vegetable’s Package <span>{{'75.79' | currency}}</span></li>
+                                <li>Organic Bananas <span>{{'151.45' | currency}}</span></li>
+                                <li>Fresh Vegetable <span>{{'35.99' | currency}}</span></li>
+
+                            </ul>
+
+                            <div class="checkout-order-subtotal">
+                                Subtotal <span>{{'750.99' | currency}}</span>
+                            </div>
+
+                            <div class="checkout-order-total">
+                                Total <span>{{'750.99' | currency}}</span>
+                            </div>
+
+                            <div class="checkout-order-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    Create an account?
+                                </label>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+
+                                <div class="checkout-order-checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Check payment
+                                    </label>
+                                </div>
+
+                                <div class="checkout-order-checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Paypal
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="site-btn">place order</button>
+                        </div> <!--./checkout-order-->
+                    </div> <!--./col-lg-4-->
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

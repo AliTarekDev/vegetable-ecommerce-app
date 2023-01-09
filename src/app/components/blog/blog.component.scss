@@ -1,0 +1,28 @@
+
+
+.blog-section-content {
+    &-text {
+        margin-top: 20px;
+        ul {
+            margin-bottom: 10px;
+            li {
+                display: inline-block;
+                color: var(--third-color);
+                font-size: 16px;
+                margin-right: 20px;
+            }
+        }
+        
+        h5 {
+            a {
+                color: var(--secandory-color);
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            color: #6f6f6f
+        }
+    }
+}
